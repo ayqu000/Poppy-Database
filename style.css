@@ -308,6 +308,35 @@ footer {
     color: #aaa;
 }
 
+/* Language switcher */
+.lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 2rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: #ff4d4d;
+    color: #0b0c10;
+}
+
+.lang-btn.active {
+    background: #ff4d4d;
+    color: #0b0c10;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     header {
