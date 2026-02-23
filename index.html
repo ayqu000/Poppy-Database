@@ -13,6 +13,10 @@
         <div class="logo">
             <a href="index.html">Poppy<span>Database</span></a>
         </div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="changeLanguage('vi')">VI</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -26,40 +30,42 @@
 
     <div class="container">
         <section class="intro">
-            <h1>Welcome to Poppy Database</h1>
-            <p>Your complete information hub for Poppy Playtime. Explore each chapter, meet the characters, and uncover the secrets of the toy factory.</p>
+            <h1 data-i18n="welcome_title">Welcome to Poppy Database</h1>
+            <p data-i18n="welcome_desc">Your complete information hub for Poppy Playtime. Explore each chapter, meet the characters, and uncover the secrets of the toy factory.</p>
         </section>
 
         <div class="chapter-grid">
             <div class="chapter-card">
                 <h3>Chapter 1</h3>
                 <p class="chapter-number">A Tight Squeeze</p>
-                <p>Released: October 12, 2021. The beginning of the nightmare. Explore the abandoned factory and meet Huggy Wuggy.</p>
-                <a href="chapter1.html" class="btn">View Chapter</a>
+                <p data-i18n="ch1_desc">Released: October 12, 2021. The beginning of the nightmare. Explore the abandoned factory and meet Huggy Wuggy.</p>
+                <a href="chapter1.html" class="btn" data-i18n="view_chapter">View Chapter</a>
             </div>
             <div class="chapter-card">
                 <h3>Chapter 2</h3>
                 <p class="chapter-number">Fly in a Web</p>
-                <p>Released: May 5, 2022. The mystery deepens in the Game Station. New toys, new threats.</p>
-                <a href="chapter2.html" class="btn">View Chapter</a>
+                <p data-i18n="ch2_desc">Released: May 5, 2022. The mystery deepens in the Game Station. New toys, new threats.</p>
+                <a href="chapter2.html" class="btn" data-i18n="view_chapter">View Chapter</a>
             </div>
             <div class="chapter-card">
                 <h3>Chapter 3</h3>
                 <p class="chapter-number">Deep Sleep</p>
-                <p>Released: January 30, 2024. Enter the orphanage and face CatNap, DogDay, and more.</p>
-                <a href="chapter3.html" class="btn">View Chapter</a>
+                <p data-i18n="ch3_desc">Released: January 30, 2024. Enter the orphanage and face CatNap, DogDay, and more.</p>
+                <a href="chapter3.html" class="btn" data-i18n="view_chapter">View Chapter</a>
             </div>
             <div class="chapter-card">
                 <h3>Chapter 4</h3>
                 <p class="chapter-number">Safe Haven</p>
-                <p>Released: January 30, 2025. Descend into the depths and encounter new allies and enemies.</p>
-                <a href="chapter4.html" class="btn">View Chapter</a>
+                <p data-i18n="ch4_desc">Released: January 30, 2025. Descend into the depths and encounter new allies and enemies.</p>
+                <a href="chapter4.html" class="btn" data-i18n="view_chapter">View Chapter</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Poppy Database - Fan site for Poppy Playtime. All rights belong to Mob Entertainment.</p>
+        <p>&copy; 2025 Poppy Database - Fan site for Poppy Playtime.</p>
     </footer>
+
+    <script src="lang.js"></script>
 </body>
 </html>
