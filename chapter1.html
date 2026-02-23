@@ -13,6 +13,10 @@
         <div class="logo">
             <a href="index.html">Poppy<span>Database</span></a>
         </div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="changeLanguage('vi')">VI</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,8 +30,8 @@
 
     <div class="container">
         <div class="chapter-header">
-            <h1>Chapter 1: A Tight Squeeze</h1>
-            <p class="subtitle">The nightmare begins.</p>
+            <h1 data-i18n="ch1_title">Chapter 1: A Tight Squeeze</h1>
+            <p class="subtitle" data-i18n="ch1_subtitle">The nightmare begins.</p>
         </div>
 
         <div class="chapter-thumbnail">
@@ -35,11 +39,11 @@
         </div>
 
         <div class="info-section">
-            <h2><i class="fas fa-calendar-alt"></i> Release Info</h2>
+            <h2><i class="fas fa-calendar-alt"></i> <span data-i18n="release_info">Release Info</span></h2>
             <ul>
-                <li><strong>Release Date:</strong> October 12, 2021</li>
-                <li><strong>Developer:</strong> Mob Entertainment</li>
-                <li><strong>Platforms (Hardware):</strong>
+                <li><strong data-i18n="release_date">Release Date:</strong> October 12, 2021</li>
+                <li><strong data-i18n="developer">Developer:</strong> Mob Entertainment</li>
+                <li><strong data-i18n="platforms_hardware">Platforms (Hardware):</strong>
                     <div class="platform-icons">
                         <a href="https://www.microsoft.com/store/productid/9N5Z7V5QZ9K8" target="_blank" rel="noopener"><span><iconify-icon icon="simple-icons:windows"></iconify-icon> Windows</span></a>
                         <a href="https://store.playstation.com/concept/10002644" target="_blank" rel="noopener"><span><iconify-icon icon="simple-icons:playstation"></iconify-icon> PlayStation</span></a>
@@ -47,7 +51,7 @@
                         <a href="https://www.nintendo.com/store/products/poppy-playtime-switch/" target="_blank" rel="noopener"><span><iconify-icon icon="simple-icons:nintendoswitch"></iconify-icon> Nintendo Switch</span></a>
                     </div>
                 </li>
-                <li><strong>Có mặt trên:</strong>
+                <li><strong data-i18n="available_on">Có mặt trên:</strong>
                     <div class="store-icons">
                         <a href="https://store.steampowered.com/app/1721470/Poppy_Playtime/" target="_blank" rel="noopener"><span><iconify-icon icon="simple-icons:steam"></iconify-icon> Steam</span></a>
                         <a href="https://store.epicgames.com/p/poppy-playtime" target="_blank" rel="noopener"><span><iconify-icon icon="simple-icons:epicgames"></iconify-icon> Epic Games</span></a>
@@ -61,58 +65,60 @@
         </div>
 
         <div class="info-section">
-            <h2><i class="fas fa-scroll"></i> Story</h2>
-            <p>You return to the abandoned Playtime Co. factory ten years after all employees mysteriously disappeared. Using the GrabPack, you navigate through the facility, solve puzzles, and discover the truth behind the missing workers. The chapter introduces the iconic Huggy Wuggy, who chases you through the vents.</p>
+            <h2><i class="fas fa-scroll"></i> <span data-i18n="story">Story</span></h2>
+            <p data-i18n="ch1_story">You return to the abandoned Playtime Co. factory ten years after all employees mysteriously disappeared. Using the GrabPack, you navigate through the facility, solve puzzles, and discover the truth behind the missing workers. The chapter introduces the iconic Huggy Wuggy, who chases you through the vents.</p>
         </div>
 
         <div class="info-section">
-            <h2><i class="fas fa-puzzle-piece"></i> Gameplay Features</h2>
+            <h2><i class="fas fa-puzzle-piece"></i> <span data-i18n="gameplay_features">Gameplay Features</span></h2>
             <ul>
-                <li>First-person puzzle-solving</li>
-                <li>Introduction of the GrabPack tool</li>
-                <li>Stealth sequences with Huggy Wuggy</li>
-                <li>VHS tapes revealing lore</li>
+                <li data-i18n="ch1_features" data-i18n-index="0">First-person puzzle-solving</li>
+                <li data-i18n="ch1_features" data-i18n-index="1">Introduction of the GrabPack tool</li>
+                <li data-i18n="ch1_features" data-i18n-index="2">Stealth sequences with Huggy Wuggy</li>
+                <li data-i18n="ch1_features" data-i18n-index="3">VHS tapes revealing lore</li>
             </ul>
         </div>
 
         <div class="info-section">
-            <h2><i class="fas fa-robot"></i> Characters</h2>
+            <h2><i class="fas fa-robot"></i> <span data-i18n="characters">Characters</span></h2>
             <div class="character-profiles">
                 <div class="character-profile">
                     <img src="images/characters/huggy-wuggy.jpg" alt="Huggy Wuggy">
                     <span class="character-name">Huggy Wuggy</span>
-                    <span class="character-role">Antagonist</span>
+                    <span class="character-role" data-i18n-role="ch1_characters.Huggy Wuggy">Antagonist</span>
                 </div>
                 <div class="character-profile">
                     <img src="images/characters/poppy.jpg" alt="Poppy">
                     <span class="character-name">Poppy</span>
-                    <span class="character-role">Mystery Doll</span>
+                    <span class="character-role" data-i18n-role="ch1_characters.Poppy">Mystery Doll</span>
                 </div>
                 <div class="character-profile">
                     <img src="images/characters/player.jpg" alt="The Player">
                     <span class="character-name">The Player</span>
-                    <span class="character-role">Protagonist</span>
+                    <span class="character-role" data-i18n-role="ch1_characters.The Player">Protagonist</span>
                 </div>
                 <div class="character-profile">
                     <img src="images/characters/elliot-ludwig.jpg" alt="Elliot Ludwig">
                     <span class="character-name">Elliot Ludwig</span>
-                    <span class="character-role">Founder (mentioned)</span>
+                    <span class="character-role" data-i18n-role="ch1_characters.Elliot Ludwig">Founder (mentioned)</span>
                 </div>
             </div>
         </div>
 
         <div class="info-section">
-            <h2><i class="fab fa-youtube"></i> Official Trailer</h2>
+            <h2><i class="fab fa-youtube"></i> <span data-i18n="official_trailer">Official Trailer</span></h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/rJ6oVn7vQvc" title="Poppy Playtime Chapter 1 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
 
-        <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> <span data-i18n="back_to_home">Back to Home</span></a>
     </div>
 
     <footer>
         <p>&copy; 2025 Poppy Database - Fan site for Poppy Playtime.</p>
     </footer>
+
+    <script src="lang.js"></script>
 </body>
 </html>
