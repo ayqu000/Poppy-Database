@@ -122,7 +122,7 @@ nav ul li a.active {
 /* Chapter page styles */
 .chapter-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .chapter-header h1 {
@@ -133,6 +133,20 @@ nav ul li a.active {
 .chapter-header .subtitle {
     font-size: 1.2rem;
     color: #ccc;
+}
+
+/* Thumbnail image */
+.chapter-thumbnail {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.chapter-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.3);
 }
 
 .info-section {
@@ -164,19 +178,124 @@ nav ul li a.active {
     display: inline-block;
 }
 
-.character-list {
+/* Platform icons (hardware) and store/stream icons */
+.platform-icons,
+.store-icons {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.platform-icons a,
+.store-icons a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+.platform-icons a:hover,
+.store-icons a:hover {
+    color: inherit;
+}
+
+.platform-icons span,
+.store-icons span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2a2a36;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    border: 1px solid #444;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.platform-icons span:hover,
+.store-icons span:hover {
+    background: #3a3a4a;
+    border-color: #ff4d4d;
+}
+
+/* Iconify icon styling */
+.platform-icons iconify-icon,
+.store-icons iconify-icon {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    vertical-align: middle;
+}
+
+.platform-icons a:hover iconify-icon,
+.store-icons a:hover iconify-icon {
+    color: #ff9999;
+}
+
+/* Character profiles with images */
+.character-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.character-profile {
+    background: #252533;
+    border-radius: 10px;
+    border: 1px solid #ff4d4d;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.character-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
+}
+
+.character-profile img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff4d4d;
+}
+
+.character-profile .character-name {
+    display: block;
+    font-weight: 600;
+    color: #ff4d4d;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.character-profile .character-role {
+    display: block;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 0.2rem;
+}
+
+/* Video container for responsive iframe */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+    border: 1px solid #ff4d4d;
     margin-top: 1rem;
 }
 
-.character-item {
-    background: #252533;
-    padding: 0.8rem 1.5rem;
-    border-radius: 30px;
-    border: 1px solid #ff4d4d;
-    font-weight: 500;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* Footer */
@@ -199,33 +318,4 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-/* Platform icons */
-.platform-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0.5rem;
-}
-
-.platform-icons span {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #2a2a36;
-    padding: 0.4rem 1.2rem;
-    border-radius: 30px;
-    border: 1px solid #444;
-    font-size: 0.95rem;
-    transition: background 0.2s ease;
-}
-
-.platform-icons span:hover {
-    background: #3a3a4a;
-    border-color: #ff4d4d;
-}
-
-.platform-icons i {
-    font-size: 1.3rem;
-    color: #ff4d4d;
 }
