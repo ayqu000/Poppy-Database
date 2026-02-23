@@ -200,3 +200,32 @@ footer {
         justify-content: center;
     }
 }
+/* Platform icons */
+.platform-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.platform-icons span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2a2a36;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    border: 1px solid #444;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+
+.platform-icons span:hover {
+    background: #3a3a4a;
+    border-color: #ff4d4d;
+}
+
+.platform-icons i {
+    font-size: 1.3rem;
+    color: #ff4d4d;
+}
